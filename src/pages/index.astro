@@ -294,15 +294,14 @@ import '../styles/contacto.css';
             </div>
           </div>
         </div>
-        <form class="reveal reveal-delay-1" action="https://formspree.io/f/mrbawopg" method="POST">
-          <div class="form-row">
-            
-            <div class="form-group">
-              <label>Email</label>
-              <input type="email" name="email" placeholder="tu@email.com" required />
-            </div>
-          </div>
-          <div class="form-group">
+       
+          
+        <form class="reveal reveal-delay-1" action="https://formspree.io/f/mrbawopg"  method="POST">
+              <div class="form-group">
+                <label>Email</label>
+                <input type="email" name="email" placeholder="tu@email.com" required />
+              </div>
+              <div class="form-group">
             <label>Servicio de interés</label>
             <select name="servicio">
               <option value="" disabled selected>Seleccioná un servicio</option>
@@ -312,11 +311,13 @@ import '../styles/contacto.css';
               <option value="otro">Otro / No sé todavía</option>
             </select>
           </div>
-          <div class="form-group">
-            <label>Contame tu proyecto</label>
-            <textarea name="mensaje" placeholder="¿Qué necesitás? ¿Tenés algún plazo?" required></textarea>
-          </div>
-          <button type="submit" class="btn-submit">Enviar mensaje →</button>
+          
+              <div class="form-group">
+                <label>Contame tu proyecto</label>
+                <textarea name="message" placeholder="¿Qué necesitás? ¿Tenés algún plazo?" required></textarea>
+              </div>
+              
+              <button type="submit" class="btn-submit">Enviar mensaje →</button>
         </form>
       </div>
     </div>
