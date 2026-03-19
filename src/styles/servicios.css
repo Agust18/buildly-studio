@@ -1,0 +1,133 @@
+.servicios {
+  padding: 7rem 0;
+}
+
+.servicios-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  margin-bottom: 4rem;
+}
+
+.servicios-header h2 {
+  font-size: clamp(2rem, 3.5vw, 2.8rem);
+}
+
+.servicios-header p {
+  max-width: 280px;
+  color: var(--muted);
+  font-size: 0.875rem;
+  text-align: right;
+}
+
+.servicios-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.5rem;
+}
+
+.servicio-card {
+  background: var(--bg2);
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  padding: 2.5rem;
+  transition: border-color 0.3s, transform 0.3s;
+  cursor: default;
+}
+
+.servicio-card:hover {
+  border-color: var(--accent);
+  transform: translateY(-4px);
+}
+
+.servicio-icon {
+  width: 44px;
+  height: 44px;
+  background: rgba(198, 241, 53, 0.08);
+  border: 1px solid rgba(198, 241, 53, 0.2);
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 1.5rem;
+  font-size: 1.2rem;
+}
+
+.servicio-card h3 {
+  font-size: 1.15rem;
+  margin-bottom: 0.75rem;
+}
+
+.servicio-card p {
+  color: var(--muted);
+  font-size: 0.875rem;
+  line-height: 1.7;
+  margin-bottom: 1.5rem;
+}
+
+.servicio-features {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  margin-bottom: 2rem;
+  padding-top: 1.5rem;
+  border-top: 1px solid var(--border);
+}
+
+.servicio-features li {
+  font-size: 0.8rem;
+  color: var(--muted);
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.servicio-features li::before {
+  content: '';
+  width: 5px;
+  height: 5px;
+  background: var(--accent);
+  border-radius: 50%;
+  flex-shrink: 0;
+}
+
+.servicio-price {
+  font-family: var(--font-display);
+  font-size: 1.3rem;
+  font-weight: 700;
+  color: var(--accent);
+}
+
+.servicio-price span {
+  font-size: 0.75rem;
+  font-weight: 400;
+  color: var(--muted);
+}
+
+@media (max-width: 900px) {
+  .servicios-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .servicios-header {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1rem;
+  }
+
+  .servicios-header p {
+    text-align: left;
+    max-width: 100%;
+  }
+}
+
+@media (max-width: 600px) {
+  .servicios-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .servicio-card {
+    transform: none !important;
+  }
+}

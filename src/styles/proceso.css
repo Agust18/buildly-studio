@@ -1,0 +1,72 @@
+.proceso {
+  padding: 7rem 0;
+}
+
+.proceso h2 {
+  font-size: clamp(2rem, 3.5vw, 2.8rem);
+  margin-bottom: 4rem;
+}
+
+.proceso-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 0;
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.proceso-step {
+  padding: 2.5rem 2rem;
+  border-right: 1px solid var(--border);
+  transition: background 0.3s;
+}
+
+.proceso-step:last-child {
+  border-right: none;
+}
+
+.proceso-step:hover {
+  background: var(--bg2);
+}
+
+.proceso-num {
+  font-family: var(--font-display);
+  font-size: 2.5rem;
+  font-weight: 800;
+  color: var(--border);
+  margin-bottom: 1.5rem;
+  transition: color 0.3s;
+}
+
+.proceso-step:hover .proceso-num {
+  color: var(--accent);
+}
+
+.proceso-step h4 {
+  font-size: 1rem;
+  margin-bottom: 0.75rem;
+}
+
+.proceso-step p {
+  font-size: 0.82rem;
+  color: var(--muted);
+  line-height: 1.6;
+}
+
+@media (max-width: 768px) {
+  .proceso-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .proceso-step {
+    border-right: none;
+    border-bottom: 1px solid var(--border);
+  }
+}
+
+@media (max-width: 500px) {
+  .proceso-grid {
+    grid-template-columns: 1fr;
+  }
+}
