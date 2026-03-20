@@ -159,3 +159,15 @@ footer p {
   .contacto-inner { grid-template-columns: 1fr; gap: 3rem; }
   .form-row { grid-template-columns: 1fr; }
 }
+
+.contacto-extra {
+  margin: 1rem 0;
+  font-size: 0.85rem;
+  color: var(--text-muted);
+}
+
+.form-note {
+  font-size: 0.75rem;
+  color: var(--text-muted);
+  margin: 0.5rem 0 1rem;
+}

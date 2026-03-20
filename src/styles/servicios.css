@@ -131,3 +131,9 @@
     transform: none !important;
   }
 }
+
+.servicio-precio {
+  font-weight: 600;
+  color: var(--gold-dim);
+  margin-bottom: 0.5rem;
+}
