@@ -1,13 +1,11 @@
 ---
 const { title } = Astro.props;
 ---
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>{title}</title>
+<meta name="description" content="Diseño y desarrollo de sitios web profesionales. Landings, webs institucionales y catálogos online para negocios en crecimiento." />
 
-<head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
- <html lang="es">
-  <title>{title}</title>
-  <meta name="description" content="Diseño y desarrollo de sitios web profesionales. Landings, webs institucionales y catálogos online para negocios en crecimiento." />
-  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
-  <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,400;12..96,500;12..96,600;12..96,700;12..96,800&display=swap" rel="stylesheet" />
-</head>
+<script is:inline src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,400;12..96,500;12..96,600;12..96,700;12..96,800&display=swap" rel="stylesheet" />
